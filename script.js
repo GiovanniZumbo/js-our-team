@@ -77,11 +77,15 @@ for (let i = 0; i < ourTeam.length; i++){
     let teamMember = ourTeam[i];
 
     boardContent += 
-    `<li>
-    Name: ${teamMember.fullName}
-    Role: ${teamMember.role}
-    <img src= ${teamMember.photo} alt="team_member_photo_${i}">
-    </li>`
+    `<div class="col">
+        <div class = "card">
+            <ul>
+            <li><h2> ${teamMember.fullName} </h2></li>
+            <li><h4> ${teamMember.role} </h4></li>
+            <img src= ${teamMember.photo} alt="team_member_photo_${i}">
+            </ul>
+        </div>
+    </div>`
 
 }
 
