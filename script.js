@@ -29,7 +29,7 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 const teamBoard = document.getElementById('teamboard');
 let boardContent = ' '
 
-//? MILESTONE 1: Creare l’array di oggetti con le informazioni fornite.
+// * MILESTONE 1: Creare l’array di oggetti con le informazioni fornite.
 
 
 const ourTeam = [
@@ -67,9 +67,11 @@ const ourTeam = [
 
 ];
 
+// *MILESTONE 2: Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
 console.table(ourTeam);
 
-//? MILESTONE 3: Stampare le stesse informazioni su DOM sottoforma di stringhe
+// * MILESTONE 3: Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 // # OUTPUT 
 
@@ -80,9 +82,9 @@ for (let i = 0; i < ourTeam.length; i++){
     `<div class="col">
         <div class = "card">
             <ul>
+            <img src= ${teamMember.photo} alt="team_member_photo_${i}">
             <li><h2> ${teamMember.fullName} </h2></li>
             <li><h4> ${teamMember.role} </h4></li>
-            <img src= ${teamMember.photo} alt="team_member_photo_${i}">
             </ul>
         </div>
     </div>`
@@ -90,16 +92,6 @@ for (let i = 0; i < ourTeam.length; i++){
 }
 
 teamBoard.innerHTML = boardContent;
-
-
-
-//? MILESTONE 2: Stampare su console le informazioni di nome, ruolo e la stringa della foto
-
-
-
-// # DATA GATHERING
-// # EVENT HANDLING
-// # PROCESSING
 
 
 
